@@ -4,7 +4,7 @@ MAINTAINER Jay Ridgeway <jayridge@gmail.com>
 RUN apt-get -y update
 RUN apt-get -y upgrade
 
-RUN apt-get -y install php5-cli curl
+RUN apt-get -y install php5-cli php5-curl curl
 RUN curl -sS https://getcomposer.org/installer | php
 
 ADD start.sh /start.sh
